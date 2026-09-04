@@ -25,7 +25,7 @@
   @keyframes zztiledrift { 0%,100% { translate: 0 0; } 50% { translate: 0 -9px; } }
   @keyframes zznudge { 0%,58%,100% { transform: translateY(0); } 76% { transform: translateY(4px); } }
   @media (prefers-reduced-motion: reduce) { [data-r="cue-arrow"] { animation: none !important; } }
-  [data-r="stage"]:has([data-r="phone"]:hover) [data-r="tile"] { scale: 0.9; opacity: 0.28; filter: blur(2.5px); z-index: 1; }
+  [data-r="stage"]:has([data-r="phone"]:hover) [data-r="tile"] { scale: 0.9; opacity: 0.1; filter: blur(2.5px); z-index: 1; }
   [data-r="stage"]:has([data-r="phone"]:hover) [data-r="phone"] { scale: 1.06; z-index: 9; }
   @media (max-width: 1000px) {
     [data-r="hero-grid"] { grid-template-columns: 1fr !important; gap: 44px !important; }
@@ -75,8 +75,8 @@
   </header>
 
   <section id="top" style="position: relative; overflow: hidden; background: #F5F7FA;">
-    <div style="position: absolute; top: -220px; right: -120px; width: 720px; height: 720px; border-radius: 999px; background: radial-gradient(circle, rgba(30,54,112,0.08) 0%, rgba(30,54,112,0) 70%); pointer-events: none;"></div>
-    <div data-r="hero-grid" style="position: relative; max-width: 1120px; margin: 0 auto; padding: 72px 28px 84px; display: grid; grid-template-columns: 1fr 480px; gap: 56px; align-items: center;">
+    <div data-px="-170" style="position: absolute; top: -220px; right: -120px; width: 720px; height: 720px; border-radius: 999px; background: radial-gradient(circle, rgba(30,54,112,0.08) 0%, rgba(30,54,112,0) 70%); pointer-events: none;"></div>
+    <div data-r="hero-grid" data-px="-46" style="position: relative; max-width: 1120px; margin: 0 auto; padding: 72px 28px 84px; display: grid; grid-template-columns: 1fr 480px; gap: 56px; align-items: center;">
       <div>
         <span style="display: inline-flex; align-items: center; gap: 8px; border: 1px solid #E2E8F5; background: #EDF1FA; color: #1E3670; border-radius: 999px; padding: 7px 14px; font-family: 'Barlow Condensed', sans-serif; font-weight: 700; font-size: 13px; letter-spacing: 2px; text-transform: uppercase;">
           <span style="width: 7px; height: 7px; border-radius: 999px; background: #D4E600; box-shadow: 0 0 0 3px rgba(212,230,0,0.3);"></span>
@@ -133,7 +133,7 @@
           </div>
           <div style="margin-top: 10px; display: inline-flex; align-items: center; gap: 5px; border: 1px solid rgba(212,230,0,0.55); background: rgba(212,230,0,0.2); color: #5F6B1E; border-radius: 999px; padding: 3px 8px; font-family: 'Barlow Condensed', sans-serif; font-weight: 700; font-size: 9px; letter-spacing: 1px; text-transform: uppercase;">4 of 6 in</div>
         </div>
-        <figure data-r="phone" data-zzphone="1" style="position: relative; z-index: 2; margin: 0; width: 320px; transition: scale .45s ease; animation: zzfloat 7s ease-in-out infinite;">
+        <figure data-r="phone" data-zzphone="1" data-px="150" style="position: relative; z-index: 2; margin: 0; width: 320px; transition: scale .45s ease; animation: zzfloat 7s ease-in-out infinite;">
           <div style="border-radius: 40px; border: 1px solid #0B1940; background: #0B1940; padding: 8px; box-shadow: 0 40px 80px -32px rgba(10,26,58,0.55);">
             <div style="border-radius: 33px; overflow: hidden; background: #F5F7FA; display: flex;">
               <img src="images/00_01_Home.png" alt="ZeroZero home screen: your next game, and games looking for players" style="display: block; width: 100%; height: auto;" />
@@ -162,7 +162,7 @@
         <p style="margin: 20px 0 0; max-width: 520px; font-size: 18px; line-height: 1.6; color: #0A1A3A; font-weight: 500; text-wrap: pretty;">It is not a place to find courts or play with strangers. ZeroZero is only for the people you already play with.</p>
       </div>
 
-      <div style="position: relative; width: 320px; max-width: 100%; margin: 0 auto; text-align: left;">
+      <div data-px="100" style="position: relative; width: 320px; max-width: 100%; margin: 0 auto; text-align: left;">
         <div style="border-radius: 40px; border: 1px solid #0B1940; background: #0B1940; padding: 8px; box-shadow: 0 40px 70px -34px rgba(10,26,58,0.5);">
           <div style="position: relative; border-radius: 33px; overflow: hidden; background: #ECE5DD;">
             <div style="display: flex; align-items: center; gap: 10px; background: #0F3D33; padding: 26px 14px 12px;">
@@ -253,7 +253,7 @@
           <svg viewBox="0 0 24 24" aria-hidden="true" style="width: 26px; height: 26px; fill: none; stroke: rgba(212,230,0,0.75); stroke-width: 2.2; stroke-linecap: round; stroke-linejoin: round;"><path d="M4 12h15"></path><path d="M13 6l6 6-6 6"></path></svg>
         </div>
 
-        <div style="border-radius: 24px; background: #fff; padding: 22px; box-shadow: 0 34px 64px -30px rgba(0,0,0,0.6);">
+        <div data-px="44" style="border-radius: 24px; background: #fff; padding: 22px; box-shadow: 0 34px 64px -30px rgba(0,0,0,0.6);">
           <div style="display: flex; align-items: center; justify-content: space-between; gap: 12px;">
             <span style="font-family: 'Barlow Condensed', sans-serif; font-weight: 700; font-size: 12px; letter-spacing: 1.8px; text-transform: uppercase; color: #5C6E93;">Ready for your review</span>
             <span style="font-size: 13px; font-weight: 600; color: #1E3670;">Edit</span>
@@ -378,7 +378,7 @@
 
         <li style="display: flex; flex-direction: column;">
           <div style="position: relative; border-radius: 20px; overflow: hidden; background: #EDF1FA; aspect-ratio: 3 / 4;">
-            <img src="images/flow-01-group.jpg" alt="Three players in sports kit talking on a court" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: center top;" />
+            <img data-px="26" src="images/flow-01-group.jpg" alt="Three players in sports kit talking on a court" style="position: absolute; left: 0; right: 0; top: -13%; width: 100%; height: 126%; object-fit: cover; object-position: center top;" />
             <span style="position: absolute; left: 12px; top: 12px; display: grid; place-items: center; width: 30px; height: 30px; border-radius: 999px; background: #050C28; color: #D4E600; font-family: 'Barlow Condensed', sans-serif; font-weight: 800; font-size: 15px; letter-spacing: 0.5px;">01</span>
           </div>
           <div style="margin-top: 14px; font-family: 'Barlow Condensed', sans-serif; font-weight: 800; font-size: 24px; line-height: 0.98; text-transform: uppercase; color: #0A1A3A;">Create a group</div>
@@ -388,7 +388,7 @@
 
         <li style="display: flex; flex-direction: column;">
           <div style="position: relative; border-radius: 20px; overflow: hidden; background: #EDF1FA; aspect-ratio: 3 / 4;">
-            <img src="images/flow-02-game.jpg" alt="A player setting up a game on his phone" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: center top;" />
+            <img data-px="-26" src="images/flow-02-game.jpg" alt="A player setting up a game on his phone" style="position: absolute; left: 0; right: 0; top: -13%; width: 100%; height: 126%; object-fit: cover; object-position: center top;" />
             <span style="position: absolute; left: 12px; top: 12px; display: grid; place-items: center; width: 30px; height: 30px; border-radius: 999px; background: #050C28; color: #D4E600; font-family: 'Barlow Condensed', sans-serif; font-weight: 800; font-size: 15px; letter-spacing: 0.5px;">02</span>
           </div>
           <div style="margin-top: 14px; font-family: 'Barlow Condensed', sans-serif; font-weight: 800; font-size: 24px; line-height: 0.98; text-transform: uppercase; color: #0A1A3A;">Create a game</div>
@@ -398,7 +398,7 @@
 
         <li style="display: flex; flex-direction: column;">
           <div style="position: relative; border-radius: 20px; overflow: hidden; background: #EDF1FA; aspect-ratio: 3 / 4;">
-            <img src="images/flow-03-slots.jpg" alt="Four people in different places tapping join on their phones" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: center top;" />
+            <img data-px="26" src="images/flow-03-slots.jpg" alt="Four people in different places tapping join on their phones" style="position: absolute; left: 0; right: 0; top: -13%; width: 100%; height: 126%; object-fit: cover; object-position: center top;" />
             <span style="position: absolute; left: 12px; top: 12px; display: grid; place-items: center; width: 30px; height: 30px; border-radius: 999px; background: #050C28; color: #D4E600; font-family: 'Barlow Condensed', sans-serif; font-weight: 800; font-size: 15px; letter-spacing: 0.5px;">03</span>
           </div>
           <div style="margin-top: 14px; font-family: 'Barlow Condensed', sans-serif; font-weight: 800; font-size: 24px; line-height: 0.98; text-transform: uppercase; color: #0A1A3A;">Race for slots</div>
@@ -408,7 +408,7 @@
 
         <li style="display: flex; flex-direction: column;">
           <div style="position: relative; border-radius: 20px; overflow: hidden; background: #EDF1FA; aspect-ratio: 3 / 4;">
-            <img src="images/flow-04-play.jpg" alt="Players in action: badminton, cricket, pickleball and football" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: center top;" />
+            <img data-px="-26" src="images/flow-04-play.jpg" alt="Players in action: badminton, cricket, pickleball and football" style="position: absolute; left: 0; right: 0; top: -13%; width: 100%; height: 126%; object-fit: cover; object-position: center top;" />
             <span style="position: absolute; left: 12px; top: 12px; display: grid; place-items: center; width: 30px; height: 30px; border-radius: 999px; background: #050C28; color: #D4E600; font-family: 'Barlow Condensed', sans-serif; font-weight: 800; font-size: 15px; letter-spacing: 0.5px;">04</span>
           </div>
           <div style="margin-top: 14px; font-family: 'Barlow Condensed', sans-serif; font-weight: 800; font-size: 24px; line-height: 0.98; text-transform: uppercase; color: #0A1A3A;">Show up & play</div>
@@ -418,7 +418,7 @@
 
         <li style="display: flex; flex-direction: column;">
           <div style="position: relative; border-radius: 20px; overflow: hidden; background: #EDF1FA; aspect-ratio: 3 / 4;">
-            <img src="images/flow-05-payment.jpg" alt="An organiser ticking off which players have paid" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: center top;" />
+            <img data-px="26" src="images/flow-05-payment.jpg" alt="An organiser ticking off which players have paid" style="position: absolute; left: 0; right: 0; top: -13%; width: 100%; height: 126%; object-fit: cover; object-position: center top;" />
             <span style="position: absolute; left: 12px; top: 12px; display: grid; place-items: center; width: 30px; height: 30px; border-radius: 999px; background: #050C28; color: #D4E600; font-family: 'Barlow Condensed', sans-serif; font-weight: 800; font-size: 15px; letter-spacing: 0.5px;">05</span>
           </div>
           <div style="margin-top: 14px; font-family: 'Barlow Condensed', sans-serif; font-weight: 800; font-size: 24px; line-height: 0.98; text-transform: uppercase; color: #0A1A3A;">Payment confirmed</div>
@@ -544,9 +544,8 @@
   <footer style="background: #050C28; border-top: 1px solid rgba(255,255,255,0.1);">
     <div data-r="pad" style="max-width: 1120px; margin: 0 auto; padding: 34px 28px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 20px;">
       <span style="display: inline-flex; align-items: baseline; gap: 9px;">
-        <span style="font-family: 'Gugi', sans-serif; font-size: 18px; color: #fff;">0-0</span>
         <span style="font-family: 'Barlow Condensed', sans-serif; font-weight: 700; font-size: 13px; letter-spacing: 3px; color: #D4E600;">ZEROZERO</span>
-        <span style="font-size: 13px; color: rgba(255,255,255,0.4);">Every game starts nil-nil.</span>
+        <span style="font-size: 13px; color: rgba(255,255,255,0.4);">Every game starts 0-0</span>
       </span>
       <div style="display: flex; flex-wrap: wrap; align-items: center; gap: 22px; font-size: 14px; color: rgba(255,255,255,0.45);">
         <a href="#top" style="color: rgba(255,255,255,0.6);" style-hover="color: #fff;">Home</a>
@@ -554,7 +553,7 @@
         <a href="/privacy" style="color: rgba(255,255,255,0.6);" style-hover="color: #fff;">Privacy policy</a>
         <a href="/terms" style="color: rgba(255,255,255,0.6);" style-hover="color: #fff;">Terms</a>
         <a href="https://play.google.com/store" style="color: rgba(255,255,255,0.6);" style-hover="color: #fff;">Google Play</a>
-        <a href="mailto:hello@zerozero.app" style="color: rgba(255,255,255,0.6);" style-hover="color: #fff;">hello@zerozero.app</a>
+        <a href="mailto:support.zerozero@gmail.com" style="color: rgba(255,255,255,0.6);" style-hover="color: #fff;">support.zerozero@gmail.com</a>
         <span>© 2026 ZeroZero</span>
       </div>
     </div>
@@ -585,8 +584,46 @@ class Component extends DCLogic {
       return;
     }
     this.tick();
+    this.initParallax();
   }
-  componentWillUnmount() { this.timers.forEach(clearTimeout); }
+  componentWillUnmount() {
+    this.timers.forEach(clearTimeout);
+    cancelAnimationFrame(this.pxFrame);
+    if (this.onScroll) {
+      window.removeEventListener('scroll', this.onScroll);
+      window.removeEventListener('resize', this.onScroll);
+      document.removeEventListener('scroll', this.onScroll, { capture: true });
+    }
+  }
+
+  initParallax() {
+    if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+    let queued = false;
+    const apply = () => {
+      queued = false;
+      const vh = window.innerHeight;
+      document.querySelectorAll('[data-px]').forEach(el => {
+        const travel = parseFloat(el.getAttribute('data-px')) || 0;
+        const r = el.getBoundingClientRect();
+        let p = (vh - r.top) / (vh + r.height);
+        p = p < 0 ? 0 : p > 1 ? 1 : p;
+        el.style.translate = '0 ' + ((0.5 - p) * travel).toFixed(1) + 'px';
+      });
+    };
+    this.onScroll = () => {
+      if (queued) return;
+      queued = true;
+      requestAnimationFrame(apply);
+    };
+    window.addEventListener('scroll', this.onScroll, { passive: true });
+    window.addEventListener('resize', this.onScroll);
+    document.addEventListener('scroll', this.onScroll, { capture: true, passive: true });
+    const loop = () => {
+      apply();
+      this.pxFrame = requestAnimationFrame(loop);
+    };
+    loop();
+  }
   componentDidUpdate() {
     const el = this.thread.current;
     if (el) el.scrollTo({ top: el.scrollHeight, behavior: 'smooth' });
