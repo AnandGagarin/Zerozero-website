@@ -23,6 +23,8 @@
   @keyframes zzbubble { from { opacity: 0; transform: translateY(10px) scale(0.97); } to { opacity: 1; transform: none; } }
   @keyframes zztyping { 0%,60%,100% { opacity: 0.25; transform: translateY(0); } 30% { opacity: 1; transform: translateY(-3px); } }
   @keyframes zztiledrift { 0%,100% { translate: 0 0; } 50% { translate: 0 -9px; } }
+  @keyframes zznudge { 0%,58%,100% { transform: translateY(0); } 76% { transform: translateY(4px); } }
+  @media (prefers-reduced-motion: reduce) { [data-r="cue-arrow"] { animation: none !important; } }
   [data-r="stage"]:has([data-r="phone"]:hover) [data-r="tile"] { scale: 0.9; opacity: 0.28; filter: blur(2.5px); z-index: 1; }
   [data-r="stage"]:has([data-r="phone"]:hover) [data-r="phone"] { scale: 1.06; z-index: 9; }
   @media (max-width: 1000px) {
@@ -91,8 +93,10 @@
               <span style="display: block; font-family: 'Barlow Condensed', sans-serif; font-weight: 800; font-size: 21px; letter-spacing: 0.02em;">Google Play</span>
             </span>
           </a>
-          <a href="#how" style="font-size: 16px; font-weight: 600; color: #1E3670; border-bottom: 2px solid #D4E600;">How it works</a>
         </div>
+        <a href="#how" style="margin: 34px 0 0 14px; display: inline-flex; align-items: center; color: #1E3670;" style-hover="color: #0A1A3A;">
+          <span style="font-family: 'Barlow Condensed', sans-serif; font-weight: 700; font-size: 15px; letter-spacing: 2px; text-transform: uppercase; border-bottom: 2px solid #D4E600; padding-bottom: 2px;">How it works</span>
+        </a>
       </div>
 
       <div data-r="stage" style="position: relative; display: flex; justify-content: center; align-items: center; min-height: 680px;">
